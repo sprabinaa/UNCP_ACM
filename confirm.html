@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCP-ACM - Registration Confirmation</title>
+    <link rel="stylesheet" href="confirm.css">
+</head>
+<body onload="init()">
+    <div class="container">
+        <header>
+            <h1>UNCP-ACM Student Chapter</h1>
+            <h2>Registration Confirmation</h2>
+            <p>Please review your information before submitting</p>
+        </header>
+
+        <div class="confirmation-content">
+            <table id="confirmationTable">
+                <tr>
+                    <td><strong>First Name:</strong></td>
+                    <td id="firstNameCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Last Name:</strong></td>
+                    <td id="lastNameCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Student ID:</strong></td>
+                    <td id="studentIdCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td id="emailCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone:</strong></td>
+                    <td id="phoneCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Major:</strong></td>
+                    <td id="majorCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Academic Year:</strong></td>
+                    <td id="yearCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Areas of Interest:</strong></td>
+                    <td id="interestsCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Previous Experience:</strong></td>
+                    <td id="experienceCell"></td>
+                </tr>
+                <tr>
+                    <td><strong>Goals in ACM:</strong></td>
+                    <td id="goalsCell"></td>
+                </tr>
+            </table>
+
+            <div class="confirmation-actions">
+                <button onclick="submitRegistration()" class="btn btn-confirm">Confirm Registration</button>
+                <button onclick="goBack()" class="btn btn-edit">Edit Information</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="confirm.js"></script>
+</body>
+</html>

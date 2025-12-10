@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCP-ACM Student Chapter</title>
+    <link rel="stylesheet" href="theme1.css" id="theme-style">
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="logo">
+                <img src="UNCP.png" alt="UNCP Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>UNCP-ACM</h1>
+                    <p>Student Chapter</p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#contact" style="float: right;">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="leftTopBox">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+                <li><a href="#calendar">Event Calendar</a></li>
+                <li><a href="#photos">Photo Gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="midBox">
+            <h2>Welcome to UNCP ACM Student Chapter</h2>
+            <img src="CS.png" alt="Computer Science Department" class="main-image">
+            <p>The Association for Computing Machinery (ACM) Student Chapter at UNC Pembroke brings together students interested in computer science and technology. We organize workshops, hackathons, and networking events to enhance your academic and professional development.</p>
+            
+            <h3>Latest News</h3>
+            <div class="news-item">
+                <h4>Spring 2024 Hackathon Announced</h4>
+                <p>Join us for our annual 24-hour hackathon starting April 5th. Open to all UNCP students!</p>
+            </div>
+            
+            <h3>Featured Video</h3>
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/LZ3Dc3PBq1E" 
+                        title="ACM Student Chapter Introduction" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="rightTopBox">
+            <h3>Member Login</h3>
+            <form class="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p>New member? <a href="register.html" target="_blank">Register here</a></p>
+            </form>
+        </div>
+
+        <div class="leftBottomBox">
+            <h3>Upcoming Events</h3>
+            <div class="event">
+                <h4>Tech Talk: AI Trends</h4>
+                <p>📅 March 15, 2024</p>
+                <p>⏰ 3:00 PM - 4:30 PM</p>
+                <p>📍 Science & Technology 201</p>
+            </div>
+            <div class="event">
+                <h4>Hackathon 2024</h4>
+                <p>📅 April 5-6, 2024</p>
+                <p>⏰ 24-hour event</p>
+                <p>📍 CS Building Lab</p>
+            </div>
+            <div class="event">
+                <h4>Career Workshop</h4>
+                <p>📅 March 22, 2024</p>
+                <p>⏰ 2:00 PM - 3:30 PM</p>
+                <p>📍 Business Building 105</p>
+            </div>
+        </div>
+
+        <div class="rightMidBox">
+            <h3>ACM Resources</h3>
+            <ul>
+                <li><a href="https://www.acm.org" target="_blank">ACM Official Website</a></li>
+                <li><a href="https://dl.acm.org" target="_blank">Digital Library</a></li>
+                <li><a href="https://learning.acm.org" target="_blank">Learning Center</a></li>
+                <li><a href="https://careers.acm.org" target="_blank">Career Center</a></li>
+                <li><a href="https://www.computer.org" target="_blank">IEEE Computer Society</a></li>
+            </ul>
+        </div>
+
+        <div class="rightBottomBox">
+            <h3>Photo Gallery</h3>
+            <img src="Photo.png" alt="ACM Student Activities" class="gallery-image">
+            <p>Our members at the Fall 2023 Tech Symposium</p>
+            
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+                <a href="#facebook">Facebook</a>
+                <a href="#twitter">Twitter</a>
+                <a href="#linkedin">LinkedIn</a>
+                <a href="#instagram">Instagram</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 UNCP-ACM Student Chapter. All Rights Reserved.</p>
+                <p>University of North Carolina at Pembroke • 1 University Drive • Pembroke, NC 28372</p>
+                <p>Phone: (910) 521-6000 • Email: <a href="mailto:acm@uncp.edu">acm@uncp.edu</a></p>
+                <button onclick="toggleTheme()">Switch Theme</button>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const themeStyle = document.getElementById('theme-style');
+            if (themeStyle.getAttribute('href') === 'theme1.css') {
+                themeStyle.setAttribute('href', 'theme2.css');
+            } else {
+                themeStyle.setAttribute('href', 'theme1.css');
+            }
+        }
+    </script>
+</body>
+</html>

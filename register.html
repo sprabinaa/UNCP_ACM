@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNCP-ACM Student Chapter - Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UNCP-ACM Student Chapter</h1>
+            <h2>New Member Registration</h2>
+        </header>
+
+        <form id="registrationForm" class="registration-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="fname">First Name *</label>
+                    <input type="text" id="fname" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Last Name *</label>
+                    <input type="text" id="lname" name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID *</label>
+                    <input type="text" id="studentId" name="studentid" required pattern="[0-9]{9}">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+                
+                <div class="form-group">
+                    <label for="major">Major *</label>
+                    <select id="major" name="major" required>
+                        <option value="">Select your major</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="it">Information Technology</option>
+                        <option value="cyber">Cybersecurity</option>
+                        <option value="ds">Data Science</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Academic Year *</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select your year</option>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                        <option value="graduate">Graduate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Areas of Interest</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="ai" name="interests" value="ai">
+                        <label for="ai">Artificial Intelligence</label>
+                        
+                        <input type="checkbox" id="web" name="interests" value="web">
+                        <label for="web">Web Development</label>
+                        
+                        <input type="checkbox" id="mobile" name="interests" value="mobile">
+                        <label for="mobile">Mobile Development</label>
+                        
+                        <input type="checkbox" id="data" name="interests" value="data">
+                        <label for="data">Data Science</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div class="form-group">
+                    <label for="experience">Previous Experience</label>
+                    <textarea id="experience" name="experience" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="goals">Goals in ACM</label>
+                    <textarea id="goals" name="goals" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit Registration</button>
+                <button type="reset" class="btn btn-secondary">Reset Form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
