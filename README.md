@@ -13,3 +13,8 @@ This repository contains the web programming project I built in my Web Programmi
 - Multiple styled pages with responsive layout
 - Interactive UI with JavaScript event handling
 - Database integration via PHP and MySQL
+## Screenshots
+Screenshots of the application interface and functionality are included in this repository.
+
+## How to Run
+Open `index.html` in a web browser to view and interact with the site.
